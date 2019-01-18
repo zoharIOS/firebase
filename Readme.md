@@ -71,3 +71,16 @@ exports.createUser = functions.https.onRequest(createUser);
 
 ```
 Then just post with postman to create_user function url an object and it will be eco back as aresponse
+
+inorder to create service manager to get access to firebase database we need in index.js to add:
+```
+const admin = require('firebase-admin');
+
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://one-time-password-b07e6.firebaseio.com"
+  });
+```
+and to generate private key from console.firebase, from proget settings>Service accounts>generate new private key
+then open the downloaded file, and paste its conent to new create file under functions folder, name the file "service_acount.json".
+
