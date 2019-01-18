@@ -53,5 +53,5 @@ if you get error, link the project in local to the relevant project in remote be
 > firebase use --add
 (select project from the list)
 ```
-
+and then just ```firebase deploy```
 
