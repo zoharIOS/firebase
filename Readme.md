@@ -10,7 +10,7 @@ login
 ```
 > firebase login
 ```
-create a project, cd to that directory and then:
+**Local Firebase project**: create a project, cd to that directory and then:
 ```
 >firebase init
 ```
@@ -27,11 +27,16 @@ because this is what we initiated, and copy the project ID from the url.
 example" https://console.firebase.google.com/u/0/project/one-time-password-b07e6/functions/list
 the project id is one-time-password-b07e6
 
-deploy:
+deploy: local to remote project:
 ```
 > firebase deploy --project one-time-password-b07e6
 ```
 
+Now we can edit functions in remote project, in firebase function by using the url output from the deploy process.
+In the end of the process:
+```
+Function URL (helloWorld): https://us-central1-one-time-password-b07e6.cloudfunctions.net/helloWorld
+```
 
 
 
