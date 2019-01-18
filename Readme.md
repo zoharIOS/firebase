@@ -38,5 +38,14 @@ the output will be displayed url:
 Function URL (helloWorld): https://us-central1-one-time-password-b07e6.cloudfunctions.net/helloWorld
 ```
 
+Inside the local project, in functions folder, index.js
+every time we call expende with a name following, it will become as the name of a function.
+```
+exports.helloWorld = functions.https.onRequest((request, response) => {
+ response.send("Hello from Firebase!");
+});
+```
+hellloWorld is the name of the function that will apear in firbase console. the output "Hello from Firebase"
+will be show in the url: https://us-central1-one-time-password-b07e6.cloudfunctions.net/helloWorld
 
 
