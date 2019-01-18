@@ -55,3 +55,19 @@ if you get error, link the project in local to the relevant project in remote be
 ```
 and then just ```firebase deploy```
 
+inorder to crete function on dedicated filr we create a file inside function directory in our local firbase project.
+let call it "create_user.js"
+```
+module.exports = function(req, res) {
+    res.send(req.body);
+};
+```
+and in index.js:
+```
+const createUser = require('./create_user');
+```
+```
+exports.createUser = functions.https.onRequest(createUser);
+
+```
+Then just post with postman to create_user function url an object and it will be eco back as aresponse
