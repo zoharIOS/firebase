@@ -32,8 +32,8 @@ deploy: local to remote project:
 > firebase deploy --project one-time-password-b07e6
 ```
 
-Now we can edit functions in remote project, in firebase function by using the url output from the deploy process.
-In the end of the process:
+Now we can edit functions in remote project, in functions section.
+the output will be displayed url:
 ```
 Function URL (helloWorld): https://us-central1-one-time-password-b07e6.cloudfunctions.net/helloWorld
 ```
