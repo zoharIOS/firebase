@@ -87,3 +87,5 @@ now we can import the file to index.js as "serviceAcount"
 ```
 const serviceAccount = require('./service_acount.json');
 ```
+(add that before the call admin.credential.cert(serviceAccount))
+
