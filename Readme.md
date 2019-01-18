@@ -83,4 +83,7 @@ admin.initializeApp({
 ```
 and to generate private key from console.firebase, from proget settings>Service accounts>generate new private key
 then open the downloaded file, and paste its conent to new create file under functions folder, name the file "service_acount.json".
-
+now we can import the file to index.js as "serviceAcount"
+```
+const serviceAccount = require('./service_acount.json');
+```
