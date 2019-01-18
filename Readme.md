@@ -48,4 +48,10 @@ exports.helloWorld = functions.https.onRequest((request, response) => {
 hellloWorld is the name of the function that will apear in firbase console. the output "Hello from Firebase"
 will be show in the url: https://us-central1-one-time-password-b07e6.cloudfunctions.net/helloWorld
 
+if you get error, link the project in local to the relevant project in remote before deplying:
+```
+> firebase use --add
+(select project from the list)
+```
+
 
